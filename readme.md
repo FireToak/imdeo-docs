@@ -1,83 +1,76 @@
-# Template `README.md` pour les dépôts
+# Documentation du contexte IMDEO
 
-## Prompt IA
+![Bannière IMDEO](/docs_imdeo/docs/assets/banniere_imdeo.png)
 
-Tu es un ingénieur SRE senior garant du respect des bonnes pratiques de l’industrie. Ta mission est de rédiger le fichier `README.md` du projet en restant concis, clair et professionnel dans tes explications.
+## Contexte du dépôt
 
-Ci-dessous se trouve un template Markdown du `README.md`. Les commentaires entre crochets `[]` sont des instructions destinées à ton persona et ne doivent jamais apparaître dans le résultat final.
+Ce dépôt contient l'ensemble de la documentation technique relative au **contexte IMDEO** dans le cadre du **BLOC 2 - Administration des systèmes et des réseaux** du BTS SIO (Services Informatiques aux Organisations).
 
-Ta réponse doit contenir uniquement le résultat final, sans texte supplémentaire ni explication.
+Le projet IMDEO (Infrastructure Mutualisée de Déploiement et d'Exploitation Opérationnelle) simule un environnement professionnel d'infrastructure réseau et système comprenant :
 
-Informations à prendre en compte :
+- **Services réseau** : DHCP, DNS, routage inter-VLAN, configuration de switchs et routeurs
+- **Services système** : Gestion de serveurs Debian, sécurisation du boot, administration Linux
+- **Sécurité** : Hardening de systèmes, sécurisation des bootloaders, analyse de vulnérabilités
 
-* [INSÉRER LES INFORMATIONS]
+Cette documentation est **partagée publiquement via GitHub Pages** et construite automatiquement avec **MkDocs Material**.
 
-````markdown
-# [nom]
+- **URL du site de documentation :** [Documentation - Infrastructure IMDEO](https://imdeo.bts.loutik.fr)
 
-![Bannière du projet]([Insère l'URL de l'image si fournie, sinon supprime cette ligne])
+---
 
-## Contexte
+## Organisation du dépôt
 
-[Rédige une description claire et professionnelle du projet basée sur les informations fournies]
+Ce dépôt est organisé de façon suivante :
 
------
-
-## Structure du dépôt
-
-L’organisation du dépôt suit la logique suivante :
-
-```text
-[Génération de l’arborescence du projet avec les dossiers et fichiers importants]
+```
+bts-sio_imdeo/
+├── readme.md # Ce fichier
+├── docs_imdeo/ # Dossier principal de la documentation
+│ ├── mkdocs.yaml # Configuration MkDocs
+│ └── docs/ # Contenu de la documentation
+│ ├── 01-Réseau/ # Documentation réseau (DHCP, routage, VLAN...)
+│ ├── 02-Système/ # Documentation système (Debian, GRUB, Linux...)
+│ └── assets/ # Ressources (images, CSS, logos)
+│ ├── css/
+│ │ └── style.css # Feuille de style personnalisée
+│ └── logo_imdeo.jpg # Logo du projet
 ```
 
-- **`[<chemin>/]`** : [Description de l’utilité du dossier]
-- **`[<chemin>/<nom.extension>]`** : [Description de l’utilité du fichier]
+---
 
------
+## Utiliser le dépôt
 
-## Utilisation de [nom]
+### 📖 Consulter la documentation en ligne
 
-### 1. Cloner le dépôt localement
+La documentation est disponible publiquement via GitHub Pages :
 
+**🔗 [https://AP-BTS-SIO-Louis.github.io/imdeo/](https://AP-BTS-SIO-Louis.github.io/imdeo/)**
+
+### 🛠️ Lancer la documentation en local
+
+Pour visualiser et modifier la documentation localement :
+
+1. **Cloner le dépôt**
 ```bash
-git clone [URL du dépôt]
-cd [Nom du dépôt]
+git clone https://github.com/AP-BTS-SIO-Louis/imdeo.git
+cd imdeo/docs_imdeo
 ```
 
-### 2. [Action à réaliser]
-
-[Description de l’action]
-
-```bash
-[Exemple de commande]
+2. **Installer MkDocs et le thème Material**
+```
+pip install mkdocs mkdocs-material
 ```
 
-### 3. [Action suivante]
-
-[Ajouter autant d’étapes que nécessaire]
-
------
-
-## Bonnes pratiques et sécurité
-
-1. **[Nom de la bonne pratique]** : [Description]
-2. **[Nom de la bonne pratique]** : [Description]
-
-```bash
-[Commande à exécuter si nécessaire]
+3. **Lancer le serveur de développement**
+```
+mkdocs serve
 ```
 
------
+4. **Ouvrir dans votre navigateur**
+```
+http://127.0.0.1:8000
+```
 
-## 👨‍💻 Mainteneurs
+## Auteur
 
-- **Louis MEDO** | [LinkedIn](https://www.linkedin.com/in/louismedo/) | [Portfolio](https://louis.loutik.fr/) | [GitHub](https://github.com/FireToak) | [louis.medo@loutik.fr](mailto:louis.medo@loutik.fr)
-
------
-
-<div align="center">
-<br>
-<small><i>Dernière mise à jour : [jour mois année — Exemple : 15 avril 2026]</i></small>
-</div>
-````
+**Louis MEDO** | [Linkedin](https://www.linkedin.com/in/louismedo/) | [Portfolio](https://louis.loutik.fr/) | [GitHub](https://github.com/FireToak)

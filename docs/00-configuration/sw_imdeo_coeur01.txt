@@ -1,0 +1,172 @@
+version 12.2
+no service pad
+no service timestamps debug uptime
+no service timestamps log uptime
+no service password-encryption
+!
+hostname sw_imdeo_coeur01
+!
+boot-start-marker
+boot-end-marker
+!
+!
+username fleur privilege 15 secret 5 $1$PI2m$VQ9JXAVMI1Mag3dIaoTjr/
+no aaa new-model
+system mtu routing 1500
+ip subnet-zero
+!
+!
+ip domain-name imdeo.local
+!
+!
+!
+!
+!
+!
+!
+!
+spanning-tree mode pvst
+spanning-tree extend system-id
+!
+vlan internal allocation policy ascending
+!
+ip ssh version 2
+!
+interface FastEthernet0/1
+ description VLAN Commercial
+ switchport access vlan 3
+ switchport mode access
+ no shutdown
+!
+interface FastEthernet0/2
+ description VLAN Commercial
+ switchport access vlan 3
+ switchport mode access
+ no shutdown
+!
+interface FastEthernet0/3
+ description VLAN Ressources humaines
+ switchport access vlan 2
+ switchport mode access
+ no shutdown
+!
+interface FastEthernet0/4
+ description VLAN Ressources humaines
+ switchport access vlan 2
+ switchport mode access
+ no shutdown
+!
+interface FastEthernet0/5
+ description VLAN Administration
+ switchport access vlan 9
+ switchport mode access
+ no shutdown
+!
+interface FastEthernet0/6
+ description VLAN Administration
+ switchport access vlan 9
+ switchport mode access
+ no shutdown
+!
+interface FastEthernet0/7
+ description VLAN Direction
+ switchport access vlan 4
+ switchport mode access
+ no shutdown
+!
+interface FastEthernet0/8
+ description VLAN Direction
+ switchport access vlan 4
+ switchport mode access
+ no shutdown
+!
+interface FastEthernet0/9
+ description VLAN Comptabilite
+ switchport access vlan 5
+ switchport mode access
+ no shutdown
+!
+interface FastEthernet0/10
+ description VLAN Comptabilite
+ switchport access vlan 5
+ switchport mode access
+ no shutdown
+!
+interface FastEthernet0/11
+!
+interface FastEthernet0/12
+!
+interface FastEthernet0/13
+ description VLAN Serveurs
+ switchport access vlan 51
+ switchport mode access
+ no shutdown
+!
+interface FastEthernet0/14
+ description VLAN Serveurs
+ switchport access vlan 51
+ switchport mode access
+ no shutdown
+!
+interface FastEthernet0/15
+!
+interface FastEthernet0/16
+!
+interface FastEthernet0/17
+!
+interface FastEthernet0/18
+!
+interface FastEthernet0/19
+!
+interface FastEthernet0/20
+!
+interface FastEthernet0/21
+!
+interface FastEthernet0/22
+!
+interface FastEthernet0/23
+ description VLAN Management
+ switchport access vlan 99
+ switchport mode access
+ no shutdown
+!
+interface FastEthernet0/24
+ description VLAN Management
+ switchport access vlan 99
+ switchport mode access
+ no shutdown
+!
+interface GigabitEthernet0/1
+ description TRUNK Liaison RT_FAI
+ switchport access vlan 2
+ switchport trunk allowed vlan 2-10,51,99
+ switchport mode trunk
+ no shutdown
+!
+interface GigabitEthernet0/2
+!
+interface Vlan1
+ no ip address
+ no ip route-cache
+ shutdown
+!
+interface Vlan99
+ description Interface management
+ ip address 192.168.99.250 255.255.255.0
+ no ip route-cache
+ no shutdown
+!
+ip http server
+ip http secure-server
+!
+control-plane
+!
+!
+line con 0
+line vty 0 4
+ login local
+ transport input ssh
+line vty 5 15
+ login
+!
+end
