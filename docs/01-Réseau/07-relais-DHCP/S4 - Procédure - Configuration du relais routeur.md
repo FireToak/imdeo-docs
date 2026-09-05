@@ -4,7 +4,7 @@
 
 **Contexte : IMDEO**
 
-![](https://ap-bts-sio-louis.github.io/imdeo/assets/logo_imdeo.jpg)
+![Bannière IMDEO](https://imdeo.bts.loutik.fr/assets/banniere_imdeo.png)
 
 ---
 ## Informations générales

@@ -1,6 +1,6 @@
 # Plan d'adressage IMDEO
 
-![Bannière IMDEO](https://ap-bts-sio-louis.github.io/imdeo/assets/banniere_imdeo.png)
+![Bannière IMDEO](https://imdeo.bts.loutik.fr/assets/banniere_imdeo.png)
 
 ---
 ## Matrice d'adressage

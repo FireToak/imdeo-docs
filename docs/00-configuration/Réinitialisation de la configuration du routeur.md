@@ -1,10 +1,6 @@
 # Procédure - Réinitialisation d'un routeur Cisco 1921
 
-**Situation : Remise à zéro complète d'un routeur de l'infrastructure avant un nouveau déploiement.**
-
-**Contexte : IMDEO**
-
-![](https://ap-bts-sio-louis.github.io/imdeo/assets/logo_imdeo.jpg)
+![Bannière IMDEO](https://imdeo.bts.loutik.fr/assets/banniere_imdeo.png)
 
 ---
 ## Informations générales

@@ -4,7 +4,7 @@
 
 **Contexte : IMDEO**
 
-![](https://raw.githubusercontent.com/firetoak/medias/main/bts-sio-images/logo_imdeo.png)
+![Bannière IMDEO](https://imdeo.bts.loutik.fr/assets/banniere_imdeo.png)
 
 ---
 ## Informations

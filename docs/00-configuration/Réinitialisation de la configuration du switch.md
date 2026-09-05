@@ -1,10 +1,6 @@
 # Procédure - Réinitialisation d'un commutateur Cisco 2960
 
-**Situation : Remise à zéro complète d'un équipement avant redéploiement ou nouvelle configuration**
-
-**Contexte : IMDEO**
-
-![](https://ap-bts-sio-louis.github.io/imdeo/assets/logo_imdeo.jpg)
+![Bannière IMDEO](https://imdeo.bts.loutik.fr/assets/banniere_imdeo.png)
 
 ---
 ## Informations générales

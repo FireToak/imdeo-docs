@@ -1,10 +1,10 @@
-# S3 - Playbook - Numéro de révision client supérieur au serveur VTP
+# S3 - Numéro de révision client supérieur au serveur VTP
 
 **Situation 3 : Distribution automatique de la base Vlan sur l'ensemble des commutateurs de la société**
 
 **Contexte : IMDEO**
 
-![](https://ap-bts-sio-louis.github.io/imdeo/assets/logo_imdeo.jpg)
+![Bannière IMDEO](https://imdeo.bts.loutik.fr/assets/banniere_imdeo.png)
 
 ---
 ## Informations générales
