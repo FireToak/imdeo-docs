@@ -1,6 +1,6 @@
 # Documentation du contexte IMDEO
 
-![Bannière IMDEO](/docs_imdeo/docs/assets/banniere_imdeo.png)
+![Bannière IMDEO](https://imdeo.bts.loutik.fr/assets/banniere_imdeo.png)
 
 ## Contexte du dépôt
 
