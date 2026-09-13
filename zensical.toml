@@ -1,5 +1,5 @@
 [project]
-site_url = "imdeo.bts.loutik.fr"
+site_url = "https://imdeo.bts.loutik.fr"
 site_name = "Documentation infrastructure - IMDEO"
 site_description = "Documentation du contexte IMDEO du BTS SIO Paul-Louis Courier."
 site_author = "Louis MEDO "
